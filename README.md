@@ -22,19 +22,12 @@ $dg->display();
 
 ### Method 1:
 
-Release already pre-package any server and client side dependencies. It's recommended to run step 3 to update prepackaged modules.
+Install use releases with pre-packaged with all server and client side dependencies. 
 
 1. Direct download from release page https://github.com/phpcontrols/phpgrid-lite/releases/
 2. Extract and copy to your web root
-3. (Optional)
-   
-   ```sh
-   composer update
-   npm update
-   ```
-   
-4. Open install.php in your browser to create conf.php and load the sample database, or copy conf.sample.php to conf.php and fill in your database settings.
-5. Open examples/index.php to browse the demos.
+3. Open install.php in your browser to create conf.php and load the sample database, or copy conf.sample.php to conf.php and fill in your database settings.
+4. Open examples/index.php to browse the demos.
 
 ### Method 2:
 
