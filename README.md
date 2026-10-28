@@ -20,18 +20,18 @@ $dg->display();
 
 ## Install
 
-### Method 1:
+### Method 1: release download
 
-Install use releases with pre-packaged with all server and client side dependencies. 
+Each [release](https://github.com/phpcontrols/phpgrid-lite/releases/) comes with all PHP and JavaScript libraries included, so you don't need Composer or npm.
 
-1. Direct download from release page https://github.com/phpcontrols/phpgrid-lite/releases/
-2. Extract and copy to your web root
-3. Open install.php in your browser to create conf.php and load the sample database, or copy conf.sample.php to conf.php and fill in your database settings.
-4. Open examples/index.php to browse the demos.
+1. Download `phpGrid_Lite.zip` from the [releases page](https://github.com/phpcontrols/phpgrid-lite/releases/).
+2. Extract it into a folder named `phpGrid_Lite` in your web root. The zip has no top folder, and the examples and the code above load `phpGrid_Lite/conf.php`.
+3. Open `install.php` in your browser to create `conf.php` and load the sample database, or edit `conf.php` with your database settings.
+4. Open `examples/index.php` to browse the demos.
 
-### Method 2:
+### Method 2: git clone
 
-1. Put the `phpGrid_Lite` folder in your web root. To get it from GitHub, clone into that folder name, because the examples and the code above load `phpGrid_Lite/conf.php`:
+1. Clone into a folder named `phpGrid_Lite` in your web root, because the examples and the code above load `phpGrid_Lite/conf.php`:
 
    ```sh
    git clone https://github.com/phpcontrols/phpgrid-lite phpGrid_Lite
