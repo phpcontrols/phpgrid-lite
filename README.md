@@ -16,7 +16,7 @@ $dg->display();
 
 - PHP 8.0 or later (tested up to PHP 8.5)
 - A database supported by [ADOdb](https://adodb.org/): MySQL, PostgreSQL, SQL Server, Oracle, SQLite, DB2 and others
-- Composer and npm, to install the PHP and JavaScript libraries
+- Composer and npm, to install the PHP and JavaScript libraries (not needed for a release download)
 
 ## Install
 
