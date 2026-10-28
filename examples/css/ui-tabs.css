@@ -1,0 +1,82 @@
+/*
+ * jQuery UI tabs for the examples, without a jQuery UI theme. The "modern" grid theme
+ * loads only jQuery UI's structural CSS, so .tabs() lists would otherwise render as
+ * plain links. Colors follow the modern theme's tokens.
+ */
+.ui-tabs {
+  --tabs-text: #64748b;
+  --tabs-text-hover: #0f172a;
+  --tabs-active: #4f46e5;
+  --tabs-border: #dbe2ea;
+  --tabs-hover-bg: #f1f5f9;
+  --tabs-radius: 8px;
+  --tabs-duration: 140ms;
+
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.ui-tabs .ui-tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0 0 16px;
+  padding: 0;
+  border-bottom: 1px solid var(--tabs-border);
+  list-style: none;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-tab {
+  margin: 0 0 -1px; /* sit on the nav's bottom border */
+  padding: 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  display: block;
+  padding: 10px 14px;
+  border-radius: var(--tabs-radius) var(--tabs-radius) 0 0;
+  color: var(--tabs-text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-tab:not(.ui-tabs-active) .ui-tabs-anchor:hover {
+  background: var(--tabs-hover-bg);
+  color: var(--tabs-text-hover);
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-active {
+  border-bottom-color: var(--tabs-active);
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-active .ui-tabs-anchor {
+  color: var(--tabs-active);
+  cursor: default;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor:focus-visible {
+  outline: 2px solid var(--tabs-active);
+  outline-offset: -2px;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-loading .ui-tabs-anchor {
+  cursor: progress;
+}
+/* a tab bar moved inside a grid (master_detail_multiple_tabbed.php) sits flush on its caption */
+.ui-tabs .ui-jqgrid .ui-tabs-nav {
+  margin: 0;
+  padding: 4px 8px 0;
+}
+.ui-tabs .ui-tabs-panel {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    transition: background-color var(--tabs-duration), color var(--tabs-duration);
+  }
+}

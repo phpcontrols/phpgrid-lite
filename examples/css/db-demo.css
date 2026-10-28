@@ -1,0 +1,72 @@
+/*
+ * Page shell for the demos that need a database other than the bundled MySQL sample
+ * (Oracle, Microsoft Access). When the server can't reach that database the page
+ * explains what is needed instead of showing a database error.
+ */
+:root {
+  --demo-text: #0f172a;
+  --demo-muted: #64748b;
+  --demo-border: #dbe2ea;
+  --demo-surface: #f8fafc;
+  --demo-note-bg: #fffbeb;
+  --demo-note-border: #f59e0b;
+  --demo-radius: 10px;
+}
+
+html body {
+  margin: 0;
+  padding: 32px 24px;
+  color: var(--demo-text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.page-header h1 {
+  margin: 0 0 4px;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+.page-header p {
+  margin: 0 0 20px;
+  color: var(--demo-muted);
+  font-size: 14px;
+}
+
+.requirement {
+  max-width: 760px;
+  margin: 0 0 24px;
+  padding: 16px 20px;
+  border: 1px solid var(--demo-border);
+  border-left: 4px solid var(--demo-note-border);
+  border-radius: var(--demo-radius);
+  background: var(--demo-note-bg);
+  font-size: 14px;
+}
+.requirement h2 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+.requirement p,
+.requirement ul,
+.requirement ol {
+  margin: 0 0 10px;
+}
+.requirement ul,
+.requirement ol {
+  padding-left: 20px;
+}
+.requirement pre {
+  overflow-x: auto;
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--demo-border);
+  border-radius: 8px;
+  background: var(--demo-surface);
+  font-size: 13px;
+}
+.requirement li + li {
+  margin-top: 6px;
+}
+.requirement li pre {
+  margin: 8px 0;
+}

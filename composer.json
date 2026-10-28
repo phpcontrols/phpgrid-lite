@@ -1,0 +1,8 @@
+{
+    "license": "MIT",
+    "require": {
+        "greenlion/php-sql-parser": "^4.5",
+        "adodb/adodb-php": "^5.22.12",
+        "phpoffice/phpspreadsheet": "^1.29"
+    }
+}

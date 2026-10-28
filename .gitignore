@@ -1,0 +1,5 @@
+/vendor/
+/node_modules/
+/conf.php
+/install.lock
+.DS_Store
