@@ -20,7 +20,12 @@ $dg->display();
 
 ## Install
 
-1. Put the `phpGrid_Lite` folder in your web root.
+1. Put the `phpGrid_Lite` folder in your web root. To get it from GitHub, clone into that folder name, because the examples and the code above load `phpGrid_Lite/conf.php`:
+
+   ```sh
+   git clone https://github.com/phpcontrols/phpgrid-lite phpGrid_Lite
+   ```
+
 2. Install the libraries:
 
    ```sh
