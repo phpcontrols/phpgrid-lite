@@ -20,6 +20,23 @@ $dg->display();
 
 ## Install
 
+### Method 1:
+
+Release already pre-package any server and client side dependencies. It's recommended to run step 3 to update prepackaged modules.
+
+1. Direct download from release page https://github.com/phpcontrols/phpgrid-lite/releases/
+
+2. Extract and copy to your web root
+
+3. (Optional)
+   
+   ```sh
+   composer update
+   npm update
+   ```
+
+### Method 2:
+
 1. Put the `phpGrid_Lite` folder in your web root. To get it from GitHub, clone into that folder name, because the examples and the code above load `phpGrid_Lite/conf.php`:
 
    ```sh
